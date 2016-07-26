@@ -23,12 +23,10 @@ Pebble.addEventListener('webviewclosed', function(e) {
     return;
   }
   var dict = clay.getSettings(e.response);
-
+		console.log(dict);
   // Save the Clay settings to the Settings module. 
   Settings.option(dict);
 });
-
-console.log(Clay.getItemByAppKey("bowOffset"));
 
 ////////////HOME///////////////
 //////////////////////////////
