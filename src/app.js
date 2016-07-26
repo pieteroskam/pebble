@@ -8,8 +8,8 @@ var ajax = require('ajax');
 var position = {};
 
 var Settings = require('settings');
-var Clay = require('pebble-clay');
-var clayConfig = require('./config');
+var Clay = require('clay');
+var clayConfig = require('config');
 var clay = new Clay(clayConfig);
 
 ////////////SETTINGS///////////
