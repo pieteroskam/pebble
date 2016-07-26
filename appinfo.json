@@ -1,6 +1,7 @@
 {
     "appKeys": {
-        "bowOffset":4"
+        "bowOffset":4",
+        "marksEnabled":1
     },
     "capabilities": [
         "location",
