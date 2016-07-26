@@ -28,8 +28,7 @@ Pebble.addEventListener('webviewclosed', function(e) {
   Settings.option(dict);
 });
 
-console.log(clayConfig.getItemsByAppKey("bowOffset"));
-console.log(clay.getItemByAppKey("bowOffset"));
+console.log(Clay.getItemByAppKey("bowOffset"));
 
 ////////////HOME///////////////
 //////////////////////////////
