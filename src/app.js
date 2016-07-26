@@ -16,6 +16,7 @@ var clay = new Clay(clayConfig);
 //////////////////////////////
 Pebble.addEventListener('showConfiguration', function(e) {
   Pebble.openURL(clay.generateUrl());
+	console.log("configuration shown");
 });
 
 Pebble.addEventListener('webviewclosed', function(e) {
@@ -23,9 +24,23 @@ Pebble.addEventListener('webviewclosed', function(e) {
     return;
   }
   var dict = clay.getSettings(e.response);
-		console.log(dict);
+		
   // Save the Clay settings to the Settings module. 
   Settings.option(dict);
+	
+	for (var key in dict) {
+    // skip loop if the property is from prototype
+    if (!dict.hasOwnProperty(key)) continue;
+
+    var obj = dict[key];
+    for (var prop in obj) {
+        // skip loop if the property is from prototype
+        if(!obj.hasOwnProperty(prop)) continue;
+
+        // your code
+        console.log(prop + " = " + obj[prop]);
+    }
+}
 });
 
 ////////////HOME///////////////
