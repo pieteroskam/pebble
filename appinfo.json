@@ -1,0 +1,83 @@
+{
+    "appKeys": {},
+    "capabilities": [
+        "location",
+        "configurable"
+    ],
+    "companyName": "PO",
+    "longName": "Regatta winner",
+    "projectType": "pebblejs",
+    "resources": {
+        "media": [
+            {
+                "file": "images/menu_icon.png",
+                "name": "IMAGE_MENU_ICON",
+                "type": "bitmap"
+            },
+            {
+                "file": "images/logo_splash.png",
+                "name": "IMAGE_LOGO_SPLASH",
+                "type": "bitmap"
+            },
+            {
+                "file": "images/tile_splash.png",
+                "name": "IMAGE_TILE_SPLASH",
+                "type": "bitmap"
+            },
+            {
+                "file": "fonts/UbuntuMono-Regular.ttf",
+                "name": "MONO_FONT_14",
+                "type": "font"
+            },
+            {
+                "file": "images/flag.png",
+                "name": "IMAGES_FLAG_PNG",
+                "type": "bitmap"
+            },
+            {
+                "file": "images/boat.png",
+                "menuIcon": true,
+                "name": "IMAGES_BOAT_PNG",
+                "type": "bitmap"
+            },
+            {
+                "file": "images/restart.png",
+                "name": "IMAGES_RESTART_PNG",
+                "type": "bitmap"
+            },
+            {
+                "file": "images/sync.png",
+                "name": "IMAGES_SYNC_PNG",
+                "type": "bitmap"
+            },
+            {
+                "file": "images/minus.png",
+                "name": "IMAGES_MINUS_PNG",
+                "type": "bitmap"
+            },
+            {
+                "file": "images/plus.png",
+                "name": "IMAGES_PLUS_PNG",
+                "type": "bitmap"
+            },
+            {
+                "file": "images/play.png",
+                "name": "IMAGES_PLAY_PNG",
+                "type": "bitmap"
+            }
+        ]
+    },
+    "sdkVersion": "3",
+    "shortName": "Regatta winner",
+    "targetPlatforms": [
+        "aplite",
+        "basalt"
+    ],
+    "uuid": "209a103a-b716-4509-a9be-7fc23f3ed979",
+    "versionCode": 1,
+    "versionLabel": "1.0",
+    "watchapp": {
+        "hiddenApp": false,
+        "watchface": false
+    }
+}
