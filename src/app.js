@@ -7,11 +7,29 @@ var sailing = require('sailing');
 var ajax = require('ajax');
 var position = {};
 
-
+var Settings = require('settings');
 var Clay = require('pebble-clay');
 var clayConfig = require('./config');
 var clay = new Clay(clayConfig);
 
+////////////SETTINGS///////////
+//////////////////////////////
+Pebble.addEventListener('showConfiguration', function(e) {
+  Pebble.openURL(clay.generateUrl());
+});
+
+Pebble.addEventListener('webviewclosed', function(e) {
+  if (e && !e.response) {
+    return;
+  }
+  var dict = clay.getSettings(e.response);
+
+  // Save the Clay settings to the Settings module. 
+  Settings.option(dict);
+});
+
+console.log(clayConfig.getItemsByAppKey("bowOffset"));
+console.log(clay.getItemByAppKey("bowOffset"));
 
 ////////////HOME///////////////
 //////////////////////////////
