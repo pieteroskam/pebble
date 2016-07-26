@@ -43,6 +43,7 @@ Pebble.addEventListener('webviewclosed', function(e) {
 }
 });
 
+console.log(Settings.option('bowOffset'));
 ////////////HOME///////////////
 //////////////////////////////
 
