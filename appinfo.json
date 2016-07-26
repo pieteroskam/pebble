@@ -1,5 +1,5 @@
 {
-    "appKeys": {bowOffset:4},
+    "appKeys": {"bowOffset":4},
     "capabilities": [
         "location",
         "configurable"
