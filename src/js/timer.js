@@ -11,12 +11,9 @@ var timer = {
 		var countDownSeconds = timerSeconds%60;
 		if(countDownSeconds===0);//vibrate
 		if(countDownSeconds<10)countDownSeconds = "0"+countDownSeconds;
-		
-		
-		//distanceToStart = dtl(lonRCB,latRCB,lonPIN,latPIN,position.lon,position.lat);
-		
-		if(countDown<=100) return "racing";
-		else return countDownMinutes+":"+countDownSeconds;
+		var text = countDownMinutes+":"+countDownSeconds;
+		if(countDown<=100) text = "racing";		
+		return {text:text,seconds:timerSeconds};
 	},
 	up: function (){
 		if(this.started)this.startTime += 60000;

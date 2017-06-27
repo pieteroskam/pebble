@@ -70,12 +70,11 @@
     "sdkVersion": "3",
     "shortName": "Regatta winner",
     "targetPlatforms": [
-        "aplite",
-        "basalt"
+        "aplite"
     ],
     "uuid": "209a103a-b716-4509-a9be-7fc23f3ed979",
     "versionCode": 1,
-    "versionLabel": "1.0",
+    "versionLabel": "1.12",
     "watchapp": {
         "hiddenApp": false,
         "watchface": false

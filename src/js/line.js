@@ -12,6 +12,7 @@ var line = {
     
 	},
 	distanceToStart: function(position){
+
 		
 		var x0 = position.lon*111111;
 		var y0 = position.lat*111111;
@@ -21,16 +22,18 @@ var line = {
 
 		var x1=this.PIN.lon*111111;
 		var y1=this.PIN.lat*111111;
+		
+
 
 		var Dx = (x2 - x1);
 		var Dy = (y2 - y1);
 
 		var numerator = Dy*x0 - Dx*y0 - x1*y2 + x2*y1;
 		var denominator = Math.sqrt(Dx*Dx + Dy*Dy);
+		
 		if (denominator=== 0) {
 			return this.distance(x1,y1,  x0,y0);
 		}
-		
 		return Math.round(numerator/denominator-this.bowOffset);	
 	},
 	bearing: function(lat1,lon1,lat2,lon2){
